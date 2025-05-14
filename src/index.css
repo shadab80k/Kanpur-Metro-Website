@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 24 100% 50%; /* Orange */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 24 100% 97%; /* Light Orange */
+    --accent-foreground: 24 100% 40%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 24 100% 50%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 24 100% 50%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 24 100% 97%;
+    --sidebar-accent-foreground: 24 100% 40%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 24 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .metro-station {
+    @apply relative flex items-center justify-center w-4 h-4 rounded-full bg-metro-orange border-2 border-white;
+  }
+
+  .metro-station.active {
+    @apply w-6 h-6 animate-pulse-orange;
+  }
+
+  .metro-line {
+    @apply h-14 w-1 bg-metro-orange mx-auto;
+  }
+
+  .metro-card {
+    @apply bg-white rounded-2xl shadow-md p-4 mb-4;
+  }
+
+  .metro-button {
+    @apply bg-metro-orange text-white rounded-full px-6 py-3 font-medium shadow-md hover:bg-metro-orangeDark transition-colors;
+  }
+
+  .metro-button-secondary {
+    @apply bg-metro-gray text-metro-darkGray rounded-full px-6 py-3 font-medium shadow-sm hover:bg-gray-200 transition-colors;
+  }
+
+  .station-badge {
+    @apply inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .station-badge-orange {
+    @apply bg-metro-orangeLight text-metro-orangeDark;
+  }
+}
+
+/* Metro map specific animations */
+@keyframes stationPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(249, 115, 22, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(249, 115, 22, 0);
+  }
+}
+
+@keyframes lineFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Add animation utility classes */
+.animate-fadeInUp {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+.animate-fadeInScale {
+  animation: fadeInScale 0.3s ease-out forwards;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* New metro map specific styles */
+.metro-line-vertical {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background-color: #F97316;
+  border-radius: 999px;
+}
+
+.metro-station-circle {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: #F97316;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.metro-station-circle.active {
+  width: 24px;
+  height: 24px;
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.2);
+  animation: pulse 2s infinite;
+}
