@@ -97,5 +97,5 @@ Licensed under the **[MIT License](LICENSE)**
 ## 👨‍💻 Author
 
 **Mohd Shadab**  
-🎨 UI/UX Designer | 🎓 IIT Madras | 🤖 Generative + Agentic AI Enthusiast  
+🎨 UI/UX Designer | 🎓 IIT Madras Bs Data Science | 🤖 Generative + Agentic AI Enthusiast  
 🔗 [Connect on LinkedIn](https://www.linkedin.com/in/shadab80k/)
