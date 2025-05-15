@@ -1,73 +1,120 @@
-# Welcome to your Lovable project
+# 🚇 Kanpur Metro Project – Android App & Web Platform
 
-## Project info
+An intuitive, user-friendly transit solution built for **Kanpur Metro commuters**, designed to simplify journey planning, fare calculation, and access to real-time metro information via both an Android mobile app and a responsive website.
 
-**URL**: https://lovable.dev/projects/f5c5928f-a381-44cf-97c1-81ad66cc2a1a
+---
 
-## How can I edit this code?
+## 📱 Overview
 
-There are several ways of editing your application.
+This project delivers a **cross-platform urban mobility experience** through:
+- A full-featured **Android app** (built with React + Capacitor)
+- A responsive **web interface** for public access & APK distribution
 
-**Use Lovable**
+🎯 Goal: Make metro travel in Kanpur **smarter, faster, and accessible** using modern tech and user-centric design.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f5c5928f-a381-44cf-97c1-81ad66cc2a1a) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Features
 
-**Use your preferred IDE**
+### ✅ Mobile App (Android)
+- 🚉 **Plan Journey** – Route, travel time, platform info
+- 💰 **Fare Calculator** – Smart Card vs Regular fare + savings
+- 🏙️ **Station Info** – Lifts, platforms, line info, upcoming trains
+- 🗺️ **Metro Map** – Interactive city metro network
+- 📢 **Real-time Status** – Metro operational status
+- 🌐 **Multilingual UI** – English (EN) supported
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 💻 Website
+- 📥 **Direct APK Download** – App available outside Play Store
+- 🌍 **Web Access** – All features available on any browser
+- 🧭 **Responsive Design** – Works across devices
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Layer         | Tools / Libraries                          |
+|---------------|---------------------------------------------|
+| Frontend      | React, TypeScript, Vite                     |
+| Mobile Shell  | Capacitor (WebView-based Android App)       |
+| Styling       | Tailwind CSS, Radix UI, Shadcn Components   |
+| State Mgmt    | React Context API, TanStack React Query     |
+| Forms         | React Hook Form, Zod                        |
+| Routing       | React Router DOM                            |
+| UI/UX         | Lucide Icons, Tailwind Animate              |
+| Build Tools   | Bun, ESLint, PostCSS, Autoprefixer          |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📁 Project Structure
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Route-based screens
+│ ├── data/ # Static metro data (stations, routes, fares)
+│ ├── contexts/ # Theme and metro data context
+├── public/ # Static assets & APK
+├── dist/ # Production build output
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🚀 Getting Started
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### 📦 Prerequisites
+- Node.js / Bun
+- Capacitor CLI
+- Android Studio (for APK build)
 
-## What technologies are used for this project?
+### 🔧 Install & Run (Dev)
+```bash
+bun install
+bun run dev
 
-This project is built with:
+📱 Android Build
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+npx cap sync android
+npx cap open android
+# Build APK via Android Studio
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/f5c5928f-a381-44cf-97c1-81ad66cc2a1a) and click on Share -> Publish.
+## 🔒 Offline Capabilities
 
-## Can I connect a custom domain to my Lovable project?
+- Uses **local static metro data** (no backend)
+- Fully functional **without internet**
+- Real-time API integration **planned for future updates**
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🧠 Future Enhancements
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- 🚆 Live train tracking via real-time APIs
+- 🌐 Hindi & multilingual support
+- 🍏 iOS app support via Capacitor
+- 📱 PWA (Progressive Web App) build for browser users
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome!  
+For major changes, please open an issue first to discuss the proposal.
+
+**Code Style:** ESLint + Tailwind formatting  
+**PR Guidelines:** Keep commits clean, clear, and descriptive 💬
+
+---
+
+## 📜 License
+
+Licensed under the **[MIT License](LICENSE)**
+
+---
+
+## 👨‍💻 Author
+
+**Mohd Shadab**  
+🎨 UI/UX Designer | 🎓 IIT Madras Bs Data Science | 🤖 Generative + Agentic AI Enthusiast  
+🔗 [Connect on LinkedIn](https://www.linkedin.com/in/shadab80k/)
+
