@@ -1,6 +1,6 @@
 # 🚇 Kanpur Metro Project – Android App & Web Platform
 
-An intuitive, user-friendly transit solution built for **Kanpur Metro commuters**, designed to simplify journey planning, fare calculation, and access to real-time metro information via both an Android mobile app and a responsive website.
+An intuitive, user-friendly transit solution built for **Kanpur Metro commuters**, designed to simplify journey planning, fare calculation, and access to metro information via both an Android mobile app and a responsive website.
 
 ---
 
