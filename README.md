@@ -59,30 +59,43 @@ This project delivers a **cross-platform urban mobility experience** through:
 
 ---
 
-## 🚀 Getting Started
+---
 
-### 📦 Prerequisites
+## 🔒 Offline Capabilities
 
-Before you begin, ensure you have the following installed:
-
-- [Node.js](https://nodejs.org/) or [Bun](https://bun.sh/)
-- [Capacitor CLI](https://capacitorjs.com/docs/getting-started)
-- [Android Studio](https://developer.android.com/studio) (for building and running APK)
+- Uses **local static metro data** (no backend)
+- Fully functional **without internet**
+- Real-time API integration **planned for future updates**
 
 ---
 
-## 📱 Android Build Instructions
+## 🧠 Future Enhancements
 
-Follow these steps to build and run the Android APK:
-
-```bash
-# Sync the Capacitor Android project
-npx cap sync android
-
-# Open the project in Android Studio
-npx cap open android
-
-# Then build and run the APK using Android Studio
-
+- 🚆 Live train tracking via real-time APIs
+- 🌐 Hindi & multilingual support
+- 🍏 iOS app support via Capacitor
+- 📱 PWA (Progressive Web App) build for browser users
 
 ---
+
+## 🤝 Contributing
+
+Pull requests are welcome!  
+For major changes, please open an issue first to discuss the proposal.
+
+**Code Style:** ESLint + Tailwind formatting  
+**PR Guidelines:** Keep commits clean, clear, and descriptive 💬
+
+---
+
+## 📜 License
+
+Licensed under the **[MIT License](LICENSE)**
+
+---
+
+## 👨‍💻 Author
+
+**Mohd Shadab**  
+🎨 UI/UX Designer | 🎓 IIT Madras | 🤖 Generative + Agentic AI Enthusiast  
+🔗 [Connect on LinkedIn](https://www.linkedin.com/in/shadab80k/)
